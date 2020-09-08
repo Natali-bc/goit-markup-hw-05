@@ -66,12 +66,13 @@ address {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 1px solid #ececec;
 }
 /* .header .container::after {
 	content: "";
+	display: block;
 	width: 1200px;
-	border: 1px solid #ececec;
+	height: 1px;
+	background-color: #ececec;
 } */
 .navigation {
 	display: flex;
@@ -301,19 +302,19 @@ address {
 .work-list .item {
 	margin-bottom: 94px;
 }
-.section .text {
+/* .section .text {
 	color: var(--title-text-color);
 	font-size: 14px;
 	line-height: 1.71;
-}
-.work-list .title {
+} */
+/* .work-list .title {
 	background-color: black;
 	color: var(--primary-white-color);
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
-}
+} */
 /* Team */
 .team {
 	display: flex;
@@ -415,7 +416,6 @@ address {
 .footer {
 	background-color: var(--footer-background-color);
 	min-height: 220px;
-	display: flex;
 	padding-top: 60px;
 }
 .footer .container {
@@ -432,9 +432,9 @@ address {
 	margin-bottom: 9px;
 }
 .footer-contacts {
-	display: block;
 	background-color: var(--footer-background-color);
 	color: var(--footer-color);
+	display: block;
 	font-size: 14px;
 	line-height: 1.71;
 	text-decoration: none;
@@ -444,23 +444,23 @@ address {
 .footer-social-list {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .footer-social-list .footer-social-link {
+	color: var(--primary-white-color);
+	background-color: rgba(255, 255, 255, 0.1);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	color: var(--primary-white-color);
-	background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-join {
+.footer-join .footer-list-item {
 	width: calc((50% - 45px) / 2);
 	justify-content: center;
 	align-items: center;
 	display: inline-block;
-	margin-bottom: 20px;
 }
 
 .footer-join:not(:last-child) {
@@ -469,6 +469,7 @@ address {
 .footer-list-item:not(:last-child) {
 	margin-right: 10px;
 }
+
 .footer-social-link:hover {
 	background-color: var(--accent-color);
 }
@@ -483,11 +484,10 @@ address {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
-	text-transform: uppercase;
+	display: inline-block;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 20px;
-	display: inline-block;
 }
 
 /* Стили для портфолио */
